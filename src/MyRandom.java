@@ -9,8 +9,8 @@ import java.util.ArrayList;
  *  Finally, the program will present the test results. 
  *  
  * @author David Roy
- * Email: ******
- * Student ID: *********
+ * Email: david.roy@bellevuecollege.edu
+ * Student ID: 950694703
  * 4/19/19
  */
 public class MyRandom {
@@ -57,6 +57,8 @@ public class MyRandom {
 		
 		nextWord = testNextWord();
 		nextChar = testNextChar();
+		
+		testToString();
 		System.out.println("");
 		
 		//print test results
@@ -300,5 +302,11 @@ public class MyRandom {
 		return (double) passed / total;
 	}
 	
+	
+	public static void testToString() {
+		for (int i = 0; i < 10; i++) {
+			System.out.println(rand.toString());
+		}
+	}
 	
 }

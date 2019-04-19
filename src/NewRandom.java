@@ -7,8 +7,8 @@ import java.util.Random;
  * a random number or character between a given range.
  * 
  * @author David Roy
- * Email: *****
- * Student ID: ******
+ * Email: david.roy@bellevuecollege.edu
+ * Student ID: 950694703
  * 4/19/19
 
  * 
@@ -28,10 +28,22 @@ public class NewRandom extends Random {
 		//Generate a number for each sub range
 		int num1 = nextInt(low, b);
 		int num2 = nextInt(c, high);
-		
 		//based on random boolean, pick num1 or num2
 		return nextBoolean() ? num1 : num2;
 	}
+	
+	/**
+	 * This method returns a String with
+	 * the class name,
+	 * random integer from [0,100],
+	 * a random character from the alphabet,
+	 * and a random 5 letter String
+	 */
+	@Override
+	public String toString() {
+		return this.getClass().getName() + " " + nextInt(0, 100) + " " + nextChar() + " " + nextWord(5);
+	}
+	
 
 	/**
 	 * This method generates a random number between

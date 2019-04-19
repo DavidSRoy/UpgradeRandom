@@ -7,8 +7,8 @@ import java.util.Random;
  * a random number or character between a given range.
  * 
  * @author David Roy
- * Email: david.roy@bellevuecollege.edu
- * Student ID: 950694703
+ * Email: 
+ * Student ID: 
  * 4/19/19
 
  * 
